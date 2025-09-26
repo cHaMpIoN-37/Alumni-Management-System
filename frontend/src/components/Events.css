@@ -1,0 +1,109 @@
+/* src/components/Events.css */
+.events-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.events-header h2 {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+}
+
+.event-form {
+  background: var(--color-card-bg);
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 18px var(--color-shadow);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-grid input,
+.form-grid textarea {
+  padding: 0.75rem;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card {
+  display: flex;
+  background: var(--color-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px var(--color-shadow);
+  overflow: hidden;
+}
+
+.event-date {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  min-width: 80px;
+}
+
+.event-month {
+  display: block;
+  font-size: 0.85rem;
+}
+
+.event-day {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.event-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.event-content h3 {
+  margin: 0 0 0.5rem;
+  color: var(--color-text);
+}
+
+.event-details {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.event-description {
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.event-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.event-actions .btn {
+  padding: 0.5rem 1rem;
+}

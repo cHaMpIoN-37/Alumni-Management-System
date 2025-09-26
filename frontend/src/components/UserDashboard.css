@@ -1,0 +1,63 @@
+.dashboard {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  background: var(--color-bg);
+}
+
+/* Sidebar styling */
+.dashboard-sidebar {
+  width: 260px;
+  background: var(--color-card-bg);
+  border-right: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  box-shadow: inset -2px 0 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs container */
+.sidebar-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+/* Individual tab buttons */
+.sidebar-tab {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.sidebar-tab:hover {
+  background: var(--color-bg);
+}
+
+/* Active tab styling */
+.sidebar-tab.active {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: white;
+  box-shadow: 0 6px 12px rgba(45, 27, 105, 0.35);
+}
+
+/* Icons inside tabs */
+.tab-icon {
+  font-size: 1.2rem;
+}
+
+/* Content area styling */
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  background: var(--color-bg);
+  overflow-y: auto;
+}

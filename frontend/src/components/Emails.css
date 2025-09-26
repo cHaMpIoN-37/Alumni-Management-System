@@ -1,0 +1,57 @@
+.emails-container {
+  max-width: 700px;
+  margin: auto;
+  background: var(--color-card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px var(--color-shadow);
+  transition: background 0.3s, color 0.3s;
+}
+
+.emails-container h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.emails-container select,
+.emails-container textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.75rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.emails-container select:focus,
+.emails-container textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.emails-container button {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.emails-container button:hover {
+  background: var(--color-primary-hover);
+}
+
+.toast {
+  margin-top: 0.7rem;
+  background: #45c471;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  animation: fadein 1s ease forwards;
+}

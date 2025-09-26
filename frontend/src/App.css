@@ -1,0 +1,2 @@
+.App { display: flex; flex-direction: column; height: 100vh; }
+.main-content { padding: 1rem; flex: 1; overflow-y: auto; }
